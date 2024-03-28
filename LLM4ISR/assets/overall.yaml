@@ -1,0 +1,28 @@
+data_path: '../Dataset/'
+dataset: 'bundle'
+E_2: 2 
+train_num: 50
+
+#Improve parameter
+N_t: 32
+N_e: 16
+N_r: 2
+steps_per_gradient: 1
+addition_sample: 2
+num_candidates: 8
+
+#Select parameter
+N_o: 5
+E_1: 16 
+gamma: 2 
+N_t: 32
+
+#Wandb parameter
+use_wandb: False
+wandb_api_key: ''
+
+# Evaluate
+metrics: ["hit","map","ndcg"]
+model: "gpt-3.5-turbo"
+seed: 42
+candidate_size: 20
